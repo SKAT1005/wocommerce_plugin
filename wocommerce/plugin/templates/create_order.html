@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>22 Followers</p>
+<p>5 Likes</p>
+<p>8 Public followers</p>
+<p>65 Followers CIS</p>
+<p>169 Followers Indian</p>
+<p>182 Followers Arabian</p>
+<p>191 Followers Chinese</p>
+<form method="post" action="#">
+    {% csrf_token %}
+    <p>{{form.as_p}}</p>
+    <button type="submit">Сохранить Заказ</button>
+</form>
+
+</body>
+</html>
