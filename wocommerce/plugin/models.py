@@ -4,6 +4,9 @@ from django.db import models
 class Type_API(models.Model):
     name = models.CharField(max_length=256, verbose_name='Название типа API')
     API_url = models.URLField(verbose_name='API url')
+    
+    def __str__(self):
+        return self.name
 
 class API(models.Model):
     API_key = models.CharField(max_length=256, verbose_name='API ключ')
